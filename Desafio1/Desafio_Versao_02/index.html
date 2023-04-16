@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Criptografador</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adicione as bibliotecas do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Adicione as funções JavaScript -->
+    <script>
+      function changeText(){
+        const text = document.querySelector("textarea").value;
+        const outText = document.getElementById("out__text");
+
+        outText.innerHTML = text;
+      }
+
+      function cripto(){
+        const text = document.querySelector("textarea").value;
+        const secondText = document.getElementById("out__text");
+
+        const resultCript = text.replace(/[e]/gi,'enter').replace(/[i]/gi,'imes').replace(/[a]/gi,'ai').replace(/[o]/gi,'ober').replace(/[u]/gi,'ufat');
+        secondText.innerHTML = resultCript;
+      }
+      
+      function descripto(){
+        const secondText = document.getElementById("out__text").value;
+
+        const resultDes = secondText.replace(/enter/gi,'e').replace(/imes/gi,'i').replace(/ai/gi,'a').replace(/ober/gi,'o').replace(/ufat/gi,'u');
+        out__text.innerHTML = resultDes;
+      }
+
+      function copy(){
+        const copyText = document.getElementById("out__text");
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+      } 
+    </script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h2>Criptografador</h2>
+      <form>
+        <div class="form-group">
+          <label for="text__input">Digite o texto:</label>
+          <textarea class="form-control" id="text__input" rows="5" placeholder="Digite o texto"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="changeText()">Exibir texto digitado</button>
+        <button type="button" class="btn btn-secondary" onclick="cripto()">Criptografar</button>
+        <button type="button" class="btn btn-info" onclick="descripto()">Descriptografar</button>
+        <button type="button" class="btn btn-success" onclick="copy()">Copiar para a Área de Transferência</button>
+      </form>
+      <hr>
+      <h2>Resultado</h2>
+      <div class="form-group">
+        <label for="out__text">Texto resultante:</label>
+        <textarea class="form-control" id="out__text" rows="5" placeholder="Texto resultante"></textarea>
+      </div>
+      <aside>
+      
+      </aside>
+    </div>
+    
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="corpyright">Desenvolvido por Clairton Lima- 2023</p>
+              </div>
+          </div>
+      </div>
+</footer> 
+  </body>
+</html>
