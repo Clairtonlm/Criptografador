@@ -9,38 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Adicione as funções JavaScript -->
-    <script>
-      function changeText(){
-        const text = document.querySelector("textarea").value;
-        const outText = document.getElementById("out__text");
-
-        outText.innerHTML = text;
-      }
-
-      function cripto(){
-        const text = document.querySelector("textarea").value;
-        const secondText = document.getElementById("out__text");
-
-        const resultCript = text.replace(/[e]/gi,'enter').replace(/[i]/gi,'imes').replace(/[a]/gi,'ai').replace(/[o]/gi,'ober').replace(/[u]/gi,'ufat');
-        secondText.innerHTML = resultCript;
-      }
-      
-      function descripto(){
-        const secondText = document.getElementById("out__text").value;
-
-        const resultDes = secondText.replace(/enter/gi,'e').replace(/imes/gi,'i').replace(/ai/gi,'a').replace(/ober/gi,'o').replace(/ufat/gi,'u');
-        out__text.innerHTML = resultDes;
-      }
-
-      function copy(){
-        const copyText = document.getElementById("out__text");
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      } 
-    </script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container mt-3">
@@ -75,5 +44,6 @@
           </div>
       </div>
 </footer> 
+<script src="script.js"></script>
   </body>
 </html>
