@@ -14,36 +14,50 @@
   <body>
     <div class="container mt-3">
       <h2>Criptografador</h2>
-      <form>
-        <div class="form-group">
-          <label for="text__input">Digite o texto:</label>
-          <textarea class="form-control" id="text__input" rows="5" placeholder="Digite o texto"></textarea>
+      <dis class="row">
+        <div class="col-4">
+          <form>
+            <div class="form-group">
+              <label for="text__input">Digite o texto:</label>
+              <textarea class="form-control" id="text__input" rows="5" placeholder="Digite o texto"></textarea>
+            </div>
+            
+          </form>
         </div>
-        <button type="button" class="btn btn-primary" onclick="changeText()">Exibir texto digitado</button>
-        <button type="button" class="btn btn-secondary" onclick="cripto()">Criptografar</button>
-        <button type="button" class="btn btn-info" onclick="descripto()">Descriptografar</button>
-        <button type="button" class="btn btn-success" onclick="copy()">Copiar para a Área de Transferência</button>
-      </form>
-      <hr>
-      <h2>Resultado</h2>
-      <div class="form-group">
-        <label for="out__text">Texto resultante:</label>
-        <textarea class="form-control" id="out__text" rows="5" placeholder="Texto resultante"></textarea>
-      </div>
-      <aside>
+        
+        <div class="col-4">
+          <div class="form-group">
+            <label for="out__text">Texto resultante:</label>
+            <textarea class="form-control" id="out__text" rows="5" placeholder="Texto resultante"></textarea>
+          </div>
+        </div>
+        <div class="col-4">
+          <aside class="lateral">
+            <h2>teste</h2>
+          </aside>
+        </div>
+      </dis>
+     
       
-      </aside>
     </div>
+    <div class="row  d-inline p-4 justify-content-center">
+             
+      <!--  <button type="button" class="btn btn-primary col-3"  onclick="changeText()">Exibir texto digitado</button>-->
+      <button type="button" class="btn btn-secondary col-3 mr-3" onclick="cripto()">Criptografar</button>
+      <button type="button" class="btn btn-info col-3 mt-3 ml-3" onclick="descripto()">Descriptografar</button>
+      <!--<button type="button" class="btn btn-success col-3" onclick="copy()">Copiar para a Área de Transferência</button>-->
+   
+  </div>
     
     <footer class="footer">
-      <div class="container">
+      <div class="container"
           <div class="row">
               <div class="col-md-12">
                   <p class="corpyright">Desenvolvido por Clairton Lima- 2023</p>
               </div>
           </div>
       </div>
-</footer> 
+    </footer> 
 <script src="script.js"></script>
   </body>
 </html>
