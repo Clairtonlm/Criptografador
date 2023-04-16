@@ -35,3 +35,12 @@
     text-align: center;
 }
 
+.lateral{
+    position: absolute;
+    left: 24.24%;
+    right: 73.14%;
+    top: 7.49%;
+    bottom: 83.6%;
+
+    background: #E8E8E8;
+}
