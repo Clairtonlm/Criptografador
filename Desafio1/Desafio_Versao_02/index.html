@@ -14,13 +14,13 @@
   <body>
     <div class="container mt-3">
       <h2>Criptografador</h2>
-      <dis class="row">
+      <div class="row">
         <div class="col-4">
           <form>
             <div class="form-group">
               <label for="text__input">Digite o texto:</label>
               <textarea class="form-control" id="text__input" rows="5" placeholder="Digite o texto"></textarea>
-              <button type="button" class="btn btn-secondary col-4 mt-3 " onclick="cripto()">Criptografar</button>
+              <button type="button" class="btn btn-secondary col-6 mt-3 " onclick="cripto()">Criptografar</button>
             </div>
             
           </form>
@@ -30,7 +30,7 @@
           <div class="form-group">
             <label for="out__text">Texto resultante:</label>
             <textarea class="form-control" id="out__text" rows="5" placeholder="Texto resultante"></textarea>
-            <button type="button" class="btn btn-info col-4 mt-3 " onclick="descripto()">Descriptografar</button>
+            <button type="button" class="btn btn-info col-6 mt-3 " onclick="descripto()">Descriptografar</button>
           </div>
         </div>
         <div class="col-4">
@@ -38,8 +38,19 @@
            <img src="/Desafio1/img/boneco.png" alt="" srcset="">
           </aside>
         </div>
-      </dis>
-     
+      </div>
+     <div class="row">
+      <div class="col-8">
+        <form>
+          <div class="form-group">
+            <label for="copy">Texto copiado:</label>
+            <textarea class="form-control" id="copy" rows="5" placeholder="Digite o texto"></textarea>
+            <button type="button" class="btn btn-success col-6 mt-4" onclick="copy()">Copiar para a Área de Transferência</button>
+          </div>
+          
+        </form>
+      </div>
+     </div>
       
     </div>
     <!--<div class="row ">

@@ -21,7 +21,7 @@ function changeText(){
   }
 
   function copy(){
-    const copyText = document.getElementById("out__text");
+    const copyText = document.getElementById("copy");
 
     copyText.select();
     copyText.setSelectionRange(0, 99999);
